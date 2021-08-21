@@ -1,10 +1,6 @@
-# Calicut-university-5th-semester
+# Calicut-university-5th-semester-javascript
 
-<h3>5-th Semster programs of Bsc.Computer Science.<br></h3>
+<h3>5-th Semster javascript programs of Bsc.Computer Science.</h3>
 
-HTML<br>
-CSS<br>
-JavaScript<br>
-php<br>
-Java
+
 
