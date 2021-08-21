@@ -29,3 +29,6 @@ button{
     margin:20px auto;
     display: block;
 }
+input:focus{
+    outline: none;
+}
