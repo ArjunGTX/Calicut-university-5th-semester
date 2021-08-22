@@ -12,18 +12,12 @@ function checkNumber(){
         alert("Please Enter a valid number");
     }
     else{
-        //initializing an empty array
-        let divisors = [];
+        var sum = 0;
         for(let i = 0;i<=number/2;i++){
             if(Number.isInteger(number/i)){
-                //if the remainder is 0 , current value of i is stored into the array
-                divisors.push(i);
+                sum = sum + i; 
             } 
         }
-        //stores the sum of all the values in the array into sum
-        let sum = divisors.reduce((total,value) => {
-           return total+=value;
-        })
         if(sum == number){
             alert(`${number} is a Perfect number`);
         }
