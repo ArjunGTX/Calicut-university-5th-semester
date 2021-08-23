@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" onblur="bgDefault()">
+        <form action="" id="form" onsubmit="submitForm()">
+        <input type="text" id="inputElement" placeholder="Enter your name" onchange="changeColor()">
+        <button id="Btn" onclick="changeBg()">Click Me</button>
+        <input type="submit" id="submitBtn" value="Submit">
+    </form>
+    </div>
+
+    
+
+
+    <script>
+        window.onload = document.getElementById("container").style.backgroundColor = "red";
+
+        function changeColor(){
+            document.getElementById('inputElement').style.color = "blue";
+        }
+
+        function changeBg(){
+           document.getElementById('container').style.backgroundColor = "yellow";
+           
+        }
+        function bgDefault(){
+            document.getElementById('container').style.backgroundColor = "#fff";
+        }
+        function submitForm(){
+            alert("Thankyou for submitting.");
+        }
+
+    </script>
+</body>
+</html>
